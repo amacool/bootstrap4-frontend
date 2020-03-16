@@ -1,0 +1,36 @@
+.welcome-wrapper {
+  background: linear-gradient(
+    151deg,
+    #6269fa 2.02%,
+    #556af7 19.66%,
+    #4e7cf7 37.3%,
+    #3f8ff4 50.41%,
+    #41adfb 61.5%,
+    #39b9fa 73.09%,
+    #2ec5f8 87.67%,
+    #2cebfd 98.8%
+  );
+  backdrop-filter: blur(100px);
+
+  .welcome-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    color: #ffffff;
+  }
+}
+
+.service-term {
+  color: #37373d;
+  text-decoration: underline;
+}
+
+@include media-breakpoint-down(sm) {
+  .welcome-wrapper {
+    .welcome-title {
+      font-size: 25px;
+    }
+  }
+}
