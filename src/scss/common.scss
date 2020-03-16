@@ -37,6 +37,15 @@ body {
   &:focus {
     outline: none;
   }
+
+  &::placeholder {
+    color: #37373d;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    opacity: 0.6;
+  }
 }
 
 .custom-checkbox .custom-control-label::before {
@@ -87,6 +96,6 @@ body {
 
 @include media-breakpoint-down(sm) {
   .font-32 {
-    font-size: 20px
+    font-size: 20px;
   }
 }
