@@ -1,5 +1,10 @@
 body {
   background-color: $body-bg;
+  font-family: 'Montserrat';
+}
+
+.bb-1 {
+  border-bottom: 1px solid rgba(208, 227, 242, 0.5);
 }
 
 .font-32 {
@@ -36,6 +41,76 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #37373d;
+}
+
+// Custom navbar
+.custom-navbar {
+  height: $navbar-height;
+
+  .dropdown-menu {
+    top: -8px;
+    left: -222px;
+    min-width: 261px;
+
+    .dropdown-item {
+      height: 40px;
+      line-height: 34px;
+
+      &:hover {
+        font-weight: bold;
+      }
+
+      &:first-child {
+        &:hover {
+          background-color: unset;
+        }
+        &:active {
+          background-color: unset;
+        }
+      }
+
+      svg {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .dropdown-toggle {
+    &::after {
+      display: none;
+    }
+  }
+
+  .alarm-dot {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    background: #F9C0E9;
+    left: 18px;
+  }
+}
+
+.main-content {
+  width: 100%;
+  height: $main-content-height;
+}
+
+footer {
+  height: $footer-height;
+  width: 100%;
+  background-color: $footer-bg;
+  color: white;
+
+  a {
+    color: white;
+  }
+  
+  a:hover {
+    color: white;
+  }
 }
 
 // custom text inputs
@@ -141,36 +216,6 @@ body {
   margin-right: 40px;
 }
 
-.expertise-wrapper {
-  
-  .expertise-item {
-
-    .expertise-circle {
-      border: 3px solid #333333;
-      box-sizing: border-box;
-      height: 24px;
-      width: 24px;
-      border-radius: 50%;
-      background-color: #DDEBF6;
-      z-index: 999;
-    }
-    
-    .expertise-indicator {
-      border-left: 2px solid;
-      position: absolute;
-      left: 11px;
-      top: 35px;
-      width: 1px;
-      height: 100%;
-    }
-  }
-
-  .expertise-item:last-child {
-    .expertise-indicator {
-      display: none;
-    }
-  }
-}
 @include media-breakpoint-down(sm) {
   .font-32 {
     font-size: 20px;

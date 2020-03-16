@@ -1,0 +1,31 @@
+
+.expertise-wrapper {
+  
+  .expertise-item {
+
+    .expertise-circle {
+      border: 3px solid #333333;
+      box-sizing: border-box;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background-color: #DDEBF6;
+      z-index: 999;
+    }
+    
+    .expertise-indicator {
+      border-left: 2px solid;
+      position: absolute;
+      left: 11px;
+      top: 35px;
+      width: 1px;
+      height: 100%;
+    }
+  }
+
+  .expertise-item:last-child {
+    .expertise-indicator {
+      display: none;
+    }
+  }
+}
