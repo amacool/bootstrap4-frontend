@@ -225,6 +225,24 @@ footer {
   right: 0;
 }
 
+// customize modal close button
+.custom-close-btn {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: transparent;
+  border: none;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.modal-dialog {
+  margin-top: 10rem ;
+}
+
 @include media-breakpoint-down(sm) {
   .font-32 {
     font-size: 20px;

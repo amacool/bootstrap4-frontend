@@ -1,10 +1,13 @@
 .transactions-table {
-  
   .dataTables_length {
     display: none;
   }
 
   .dataTables_filter {
+    display: none;
+  }
+
+  .dataTables_paginate {
     display: none;
   }
 
@@ -70,5 +73,42 @@
         }
       }
     }
+  }
+
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #ebf3ff;
+  }
+  .table thead th {
+    border-bottom: unset;
+    padding: 0.75rem;
+  }
+  tr {
+    height: 48px;
+    td {
+      padding: 0.75rem;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      color: #000000;
+    }
+  }
+}
+
+.favorite-table {
+  .table-striped tbody tr {
+    background-color: #ddebf6;
+    border-radius: 4px;
+    border-bottom: solid 10px #f2f5f7;
+    td {
+      border: none;
+    }
+  }
+
+  .table th,
+  .table td {
+    vertical-align: middle;
+    padding: 0.5rem;
   }
 }

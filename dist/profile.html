@@ -160,7 +160,8 @@
               <span>Set Availability</span>
             </div>
           </div>
-          <div class="" style="border-right: 1px solid rgba(77, 74, 74, 0.5); width: 1px; height: 120px; margin: 0 120px;"></div>
+          <div class=""
+            style="border-right: 1px solid rgba(77, 74, 74, 0.5); width: 1px; height: 120px; margin: 0 120px;"></div>
           <div class="d-flex flex-column">
             <div class="d-flex mb-4">
               <span class="font-14 font-weight-bold mr-2">Country:</span>
@@ -172,13 +173,16 @@
             </div>
             <div class="d-flex mb-4">
               <span class="font-14 font-weight-bold mr-2">Languages:</span>
-              <span class="font-14" >English, Arabic</span>
+              <span class="font-14">English, Arabic</span>
             </div>
           </div>
-          <div class="position-absolute" style="background-color: #BAD6ED; padding: 10px; border-radius: 50%; top: 1rem; right: 1rem;">
+          <div class="position-absolute" data-toggle="modal" data-target="#myModal"
+            style="background-color: #BAD6ED; padding: 10px; border-radius: 50%; top: 1rem; right: 1rem;">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z" fill="black"/>
-            </svg>              
+              <path
+                d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"
+                fill="black" />
+            </svg>
           </div>
         </div>
 
@@ -221,28 +225,32 @@
                 </div>
               </div>
               <div class="d-flex">
-                <div class="custom-icon-btn mb-4 mr-4 d-flex justify-content-center">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M8 16C3.58177 16 0 12.4182 0 8C0 3.58177 3.58177 0 8 0C12.4182 0 16 3.58177 16 8C15.9951 12.4161 12.4161 15.9951 8 16ZM8 0.533333C3.8763 0.533333 0.533333 3.8763 0.533333 8C0.533333 12.1237 3.8763 15.4667 8 15.4667C12.1237 15.4667 15.4667 12.1237 15.4667 8C15.462 3.87826 12.1217 0.538021 8 0.533333Z"
-                      fill="#8690FA" />
-                    <path
-                      d="M10.6667 11.7333L8 10.4L5.33333 11.7333L5.86667 9.06668L4 7.20001L6.66667 6.66668L8 4.26668L9.33333 6.66668L12 7.20001L10.1333 9.06668L10.6667 11.7333Z"
-                      fill="#5153FF" />
-                  </svg>
-                  <span>Favorite List</span>
-                </div>
-                <div class="custom-icon-btn mb-4 d-flex justify-content-center">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M13.6569 2.34313C12.1459 0.832125 10.1369 0 8 0C5.86312 0 3.85413 0.832125 2.34313 2.34313C0.832156 3.85413 0 5.86312 0 8C0 10.1369 0.832156 12.1459 2.34313 13.6569C3.85413 15.1679 5.86312 16 8 16C10.1369 16 12.1459 15.1679 13.6569 13.6569C15.1678 12.1459 16 10.1369 16 8C16 5.86312 15.1678 3.85413 13.6569 2.34313ZM8 15.0625C4.10572 15.0625 0.9375 11.8943 0.9375 8C0.9375 4.10572 4.10572 0.9375 8 0.9375C11.8943 0.9375 15.0625 4.10572 15.0625 8C15.0625 11.8943 11.8943 15.0625 8 15.0625Z"
-                      fill="#4F60E8" />
-                    <path
-                      d="M8.50163 7.53129H7.49744C6.92534 7.53129 6.45993 7.06589 6.45993 6.49382C6.45993 5.92173 6.92537 5.45632 7.49744 5.45632H9.50579C9.76467 5.45632 9.97454 5.24645 9.97454 4.98757C9.97454 4.7287 9.76467 4.51882 9.50579 4.51882H8.46829V3.48132C8.46829 3.22245 8.25841 3.01257 7.99953 3.01257C7.74066 3.01257 7.53078 3.22245 7.53078 3.48132V4.51882H7.49747C6.40843 4.51882 5.52246 5.40482 5.52246 6.49382C5.52246 7.58282 6.40846 8.46879 7.49747 8.46879H8.50166C9.07373 8.46879 9.53913 8.93423 9.53913 9.50629C9.53913 10.0784 9.07373 10.5438 8.50166 10.5438H6.49331C6.23443 10.5438 6.02456 10.7537 6.02456 11.0125C6.02456 11.2714 6.23443 11.4813 6.49331 11.4813H7.53078V12.5188C7.53078 12.7777 7.74066 12.9876 7.99953 12.9876C8.25841 12.9876 8.46829 12.7777 8.46829 12.5188V11.4813H8.50163C9.59063 11.4813 10.4766 10.5953 10.4766 9.50629C10.4766 8.41729 9.59063 7.53129 8.50163 7.53129Z"
-                      fill="#4F60E8" />
-                  </svg>
-                  <span>Transactions History</span>
-                </div>
+                <a href="./favorite.html">
+                  <div class="custom-icon-btn mb-4 mr-4 d-flex justify-content-center">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8 16C3.58177 16 0 12.4182 0 8C0 3.58177 3.58177 0 8 0C12.4182 0 16 3.58177 16 8C15.9951 12.4161 12.4161 15.9951 8 16ZM8 0.533333C3.8763 0.533333 0.533333 3.8763 0.533333 8C0.533333 12.1237 3.8763 15.4667 8 15.4667C12.1237 15.4667 15.4667 12.1237 15.4667 8C15.462 3.87826 12.1217 0.538021 8 0.533333Z"
+                        fill="#8690FA" />
+                      <path
+                        d="M10.6667 11.7333L8 10.4L5.33333 11.7333L5.86667 9.06668L4 7.20001L6.66667 6.66668L8 4.26668L9.33333 6.66668L12 7.20001L10.1333 9.06668L10.6667 11.7333Z"
+                        fill="#5153FF" />
+                    </svg>
+                    <span>Favorite List</span>
+                  </div>
+                </a>
+                <a href="./transactions.html">
+                  <div class="custom-icon-btn mb-4 d-flex justify-content-center">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.6569 2.34313C12.1459 0.832125 10.1369 0 8 0C5.86312 0 3.85413 0.832125 2.34313 2.34313C0.832156 3.85413 0 5.86312 0 8C0 10.1369 0.832156 12.1459 2.34313 13.6569C3.85413 15.1679 5.86312 16 8 16C10.1369 16 12.1459 15.1679 13.6569 13.6569C15.1678 12.1459 16 10.1369 16 8C16 5.86312 15.1678 3.85413 13.6569 2.34313ZM8 15.0625C4.10572 15.0625 0.9375 11.8943 0.9375 8C0.9375 4.10572 4.10572 0.9375 8 0.9375C11.8943 0.9375 15.0625 4.10572 15.0625 8C15.0625 11.8943 11.8943 15.0625 8 15.0625Z"
+                        fill="#4F60E8" />
+                      <path
+                        d="M8.50163 7.53129H7.49744C6.92534 7.53129 6.45993 7.06589 6.45993 6.49382C6.45993 5.92173 6.92537 5.45632 7.49744 5.45632H9.50579C9.76467 5.45632 9.97454 5.24645 9.97454 4.98757C9.97454 4.7287 9.76467 4.51882 9.50579 4.51882H8.46829V3.48132C8.46829 3.22245 8.25841 3.01257 7.99953 3.01257C7.74066 3.01257 7.53078 3.22245 7.53078 3.48132V4.51882H7.49747C6.40843 4.51882 5.52246 5.40482 5.52246 6.49382C5.52246 7.58282 6.40846 8.46879 7.49747 8.46879H8.50166C9.07373 8.46879 9.53913 8.93423 9.53913 9.50629C9.53913 10.0784 9.07373 10.5438 8.50166 10.5438H6.49331C6.23443 10.5438 6.02456 10.7537 6.02456 11.0125C6.02456 11.2714 6.23443 11.4813 6.49331 11.4813H7.53078V12.5188C7.53078 12.7777 7.74066 12.9876 7.99953 12.9876C8.25841 12.9876 8.46829 12.7777 8.46829 12.5188V11.4813H8.50163C9.59063 11.4813 10.4766 10.5953 10.4766 9.50629C10.4766 8.41729 9.59063 7.53129 8.50163 7.53129Z"
+                        fill="#4F60E8" />
+                    </svg>
+                    <span>Transactions History</span>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="tab-pane fade show" id="pills-resume" role="tabpanel" aria-labelledby="pills-resume-tab">
@@ -547,6 +555,33 @@
           </div>
         </div>
       </footer>
+    </div>
+  </div>
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-body d-flex flex-column align-items-center">
+          <button type="button" class="custom-close-btn" data-dismiss="modal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                fill="#4F60E8" />
+            </svg>
+          </button>
+          <div class="font-32 mt-4 ">
+            Edit personal information
+          </div>
+          <div>
+            <div class="custom-icon-btn d-flex justify-content-center mb-3" style="width: 100%;">
+              <span style="font-weight: 400;">Thanks!</span>
+            </div>
+            <div class="custom-icon-btn d-flex justify-content-center">
+              <span>Send invites via email</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>

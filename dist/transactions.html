@@ -86,8 +86,16 @@
     </nav>
     <div
       class="main-content container-fluid flex-grow-1 d-flex flex-column justify-content-between p-0 mb-0 overflow-auto">
-      <div class="d-flex flex-column align-items-center" style="width: 80%;">
-        <div>Transactions</div>
+      <div class="mt-3 pt-3" style="margin: 0 auto; width: 70%;">
+        <a class="d-flex align-items-center" href="./profile.html">
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.469669 5.46967C0.176777 5.76256 0.176777 6.23743 0.469669 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46446 6.59619 0.989591 6.3033 0.696698C6.01041 0.403804 5.53553 0.403804 5.24264 0.696698L0.469669 5.46967ZM24 5.25L1 5.25L1 6.75L24 6.75L24 5.25Z"
+              fill="#333333" />
+          </svg>
+          <div class="font-16 ml-3">Back to profile</div>
+        </a>
+        <div class="font-32 mt-5 mb-3 pt-2">Transactions</div>
         <div class="transactions-table">
           <table class="data-table table table-striped table-sm" cellspacing="0" width="100%">
             <thead>
@@ -98,6 +106,16 @@
               </tr>
             </thead>
             <tbody>
+              <tr>
+                <td>Mar 02, 2020</td>
+                <td>Michael Bob</td>
+                <td>Credited</td>
+              </tr>
+              <tr>
+                <td>Mar 02, 2020</td>
+                <td>Michael Bob</td>
+                <td>Credited</td>
+              </tr>
               <tr>
                 <td>Mar 02, 2020</td>
                 <td>Michael Bob</td>
@@ -177,6 +195,8 @@
     </div>
   </div>
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
   <script src="./bundle.js"></script>
   <script src="./js/custom.js"></script>
 </body>
