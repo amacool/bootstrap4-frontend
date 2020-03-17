@@ -1,0 +1,74 @@
+.transactions-table {
+  
+  .dataTables_length {
+    display: none;
+  }
+
+  .dataTables_filter {
+    display: none;
+  }
+
+  .dataTables_info {
+    display: none;
+  }
+
+  .dataTables_wrapper {
+    width: 100%;
+    .page-item {
+      &:last-child .page-link {
+        font-size: 0;
+        background: transparent;
+
+        &:after {
+          content: "⟶";
+          font-size: 14px;
+        }
+      }
+
+      &:first-child .page-link {
+        font-size: 0;
+        background: transparent;
+
+        &:after {
+          content: "⟵";
+          font-size: 14px;
+        }
+      }
+
+      .page-link {
+        background-color: transparent;
+        font-size: 14px;
+        color: $body-color;
+        border: 0;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .disabled .page-link {
+      background: transparent;
+      color: $color-disabled;
+    }
+
+    .active .page-link {
+      border: 1px solid;
+      border-radius: 3px;
+      background: transparent;
+      color: $color-nav-icon-active;
+    }
+
+    & > .row {
+      margin-bottom: 1.5rem;
+
+      &:last-child {
+        justify-content: center;
+
+        & > div:first-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
