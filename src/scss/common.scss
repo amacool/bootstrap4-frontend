@@ -1,6 +1,6 @@
 body {
   background-color: $body-bg;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 .bb-1 {
@@ -41,6 +41,36 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #37373d;
+}
+
+.font-10 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 18px;
+  color: #333333;
+  opacity: 0.6;
+}
+
+.border-16 {
+  background: #f2f6f9;
+  border-radius: 16px;
+  padding: 1rem;
+  line-height: 26px;
+}
+
+// custome label
+.custom-labe1 {
+  background: #a5c8fd;
+  border-radius: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #37373d;
+  padding: 4px 16px;
 }
 
 // Custom navbar
@@ -88,7 +118,7 @@ body {
     font-weight: bold;
     text-align: center;
     border-radius: 10px;
-    background: #F9C0E9;
+    background: #f9c0e9;
     left: 18px;
   }
 }
@@ -107,9 +137,50 @@ footer {
   a {
     color: white;
   }
-  
+
   a:hover {
     color: white;
+  }
+}
+
+// Custom Dropdown
+.custom-dropdown-bg-placeholder {
+  a.dropdown-toggle {
+    background-color: $color-input-bg;
+    border-radius: 40px;
+    border: none;
+    color: $color-input-placeholder;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    &:focus {
+      box-shadow: 2px 2px 4px rgba(75, 75, 83, 0.07);
+    }
+  }
+
+  ul.dropdown-menu {
+    border: none;
+    border-radius: 8px;
+    margin-top: 13px;
+    width: 100%;
+    background-color: $color-input-bg;
+
+    li {
+      a {
+        color: $color-input-placeholder;
+        width: 100%;
+        cursor: pointer;
+        display: block;
+        text-decoration: none;
+      }
+      &:hover {
+        background-color: $color-input-bg;
+        a {
+          color: $color-input-text;
+        }
+      }
+    }
   }
 }
 
@@ -148,6 +219,44 @@ footer {
 .custom-control-input:checked ~ .custom-control-label::before {
   border: 2px solid #4f60e8;
   background-color: #4f60e8;
+}
+
+.custom-add-btn {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 4px 16px;
+  border-radius: 30px;
+  border: 1px solid $color-primary;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  cursor: pointer;
+
+  span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-primary;
+  }
+
+  svg {
+    margin-right: 10px;
+  }
+
+  &:active {
+    background-color: $color-primary;
+
+    & > span {
+      color: white;
+    }
+
+    & > svg > path {
+      fill: white;
+    }
+  }
 }
 
 .custom-icon-btn {
@@ -219,13 +328,13 @@ footer {
 .green-dot {
   width: 9px;
   height: 9px;
-  background-color: #04B154;
+  background-color: #04b154;
   border-radius: 50%;
   top: 0;
   right: 0;
 }
 
-// customize modal close button
+// customize modal
 .custom-close-btn {
   position: absolute;
   right: 1rem;
@@ -240,7 +349,8 @@ footer {
 }
 
 .modal-dialog {
-  margin-top: 10rem ;
+  margin-top: 10rem;
+  min-width: 930px;
 }
 
 @include media-breakpoint-down(sm) {

@@ -176,7 +176,7 @@
               <span class="font-14">English, Arabic</span>
             </div>
           </div>
-          <div class="position-absolute" data-toggle="modal" data-target="#myModal"
+          <div class="position-absolute" data-toggle="modal" data-target="#edit-personal-info"
             style="background-color: #BAD6ED; padding: 10px; border-radius: 50%; top: 1rem; right: 1rem;">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -202,7 +202,7 @@
               aria-labelledby="pills-profile-tab">
               <div class="d-flex mb-3 mt-3 pt-3">
                 <span class="font-20 mr-3">About</span>
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center" data-toggle="modal" data-target="#edit-about-section">
                   <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M2.02441 10.7805V12.9756H4.21954L10.6937 6.50146L8.49856 4.30634L2.02441 10.7805ZM12.3912 4.8039C12.6195 4.57561 12.6195 4.20683 12.3912 3.97854L11.0215 2.60878C10.7932 2.38049 10.4244 2.38049 10.1961 2.60878L9.1249 3.68L11.32 5.87512L12.3912 4.8039Z"
@@ -216,7 +216,7 @@
               </div>
               <div class="d-flex mt-2 mb-4">
                 <span class="font-20 mr-3">Skills</span>
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center" data-toggle="modal" data-target="#edit-skills">
                   <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M2.02441 10.7805V12.9756H4.21954L10.6937 6.50146L8.49856 4.30634L2.02441 10.7805ZM12.3912 4.8039C12.6195 4.57561 12.6195 4.20683 12.3912 3.97854L11.0215 2.60878C10.7932 2.38049 10.4244 2.38049 10.1961 2.60878L9.1249 3.68L11.32 5.87512L12.3912 4.8039Z"
@@ -380,7 +380,7 @@
                           <div class="d-flex flex-column">
                             <div class="d-flex">
                               <span class="mr-3 font-20 mb-1">Manager</span>
-                              <div class="d-flex align-items-center">
+                              <div class="d-flex align-items-center" data-toggle="modal" data-target="#edit-experience">
                                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                                   xmlns="http://www.w3.org/2000/svg">
                                   <path
@@ -557,11 +557,11 @@
       </footer>
     </div>
   </div>
-  <div class="modal" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-
-        <div class="modal-body d-flex flex-column align-items-center">
+  <div class="modal" id="edit-personal-info">
+    <div class="modal-dialog d-flex justify-content-center" style="max-width: unset;">
+      <div class="modal-content" style="width: fit-content;">
+        <div class="modal-body d-flex flex-column align-items-center"
+          style="width: fit-content; padding: 1rem 4rem 2rem;">
           <button type="button" class="custom-close-btn" data-dismiss="modal">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -569,16 +569,216 @@
                 fill="#4F60E8" />
             </svg>
           </button>
-          <div class="font-32 mt-4 ">
+          <div class="font-32 mt-3 mb-4">
             Edit personal information
           </div>
+          <div class="mt-2 mb-4 d-flex dropdown-group-wrapper w-100">
+            <div class="btn-group custom-dropdown-bg-placeholder mr-4" style="width: 30%;">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">Saudi arabia<span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item"><a href="#">Australia</a></li>
+                <li class="dropdown-item"><a href="#">United State</a></li>
+                <li class="dropdown-item"><a href="#">Italy</a></li>
+              </ul>
+            </div>
+            <div class="btn-group custom-dropdown-bg-placeholder mr-4" style="width: 25%;">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">phone number<span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item"><a href="#">55883887</a></li>
+                <li class="dropdown-item"><a href="#">55883887</a></li>
+                <li class="dropdown-item"><a href="#">55883887</a></li>
+              </ul>
+            </div>
+            <div class="btn-group custom-dropdown-bg-placeholder" style="width: 30%;">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">Select Industry<span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item"><a href="#">industry1</a></li>
+                <li class="dropdown-item"><a href="#">industry2</a></li>
+                <li class="dropdown-item"><a href="#">industry3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex mb-4 pb-2">
+            <div class="border-16 d-flex flex-column mr-0 mr-sm-0 mr-md-2">
+              <div class="font-14 font-weight-bold mb-3">Languages</div>
+              <div class="d-flex">
+                <div class="custom-labe1 d-flex align-items-center mr-4">
+                  <span class="mr-2">English</span>
+                  <span class="font-16">&times;</span>
+                </div>
+                <div class="custom-labe1 d-flex align-items-center mr-4">
+                  <span class="mr-2">English</span>
+                  <span class="font-16">&times;</span>
+                </div>
+                <div class="custom-add-btn d-flex justify-content-center">
+                  <span class="font-weight-normal mr-2">Add</span>
+                  <span style="font-size: 20px;">+</span>
+                </div>
+              </div>
+            </div>
+            <div class="border-16 d-flex flex-column ml-0 ml-sm-0 ml-md-2">
+              <div class="font-14 font-weight-bold mb-3">Expertise</div>
+              <div class="d-flex">
+                <div class="custom-labe1 d-flex align-items-center mr-4">
+                  <span class="mr-2">Finance</span>
+                  <span class="font-16">&times;</span>
+                </div>
+                <div class="custom-labe1 d-flex align-items-center mr-4">
+                  <span class="mr-2">Accounting</span>
+                  <span class="font-16">&times;</span>
+                </div>
+                <div class="custom-add-btn d-flex justify-content-center">
+                  <span class="font-weight-normal mr-2">Add</span>
+                  <span style="font-size: 20px;">+</span>
+                </div>
+              </div>
+            </div>
+          </div>
           <div>
-            <div class="custom-icon-btn d-flex justify-content-center mb-3" style="width: 100%;">
-              <span style="font-weight: 400;">Thanks!</span>
-            </div>
             <div class="custom-icon-btn d-flex justify-content-center">
-              <span>Send invites via email</span>
+              <span class="pl-4 pr-4">Save</span>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="edit-about-section">
+    <div class="modal-dialog d-flex justify-content-center" style="max-width: unset;">
+      <div class="modal-content" style="width: fit-content;">
+        <div class="modal-body d-flex flex-column align-items-center"
+          style="width: fit-content; padding: 1rem 4rem 2rem;">
+          <button type="button" class="custom-close-btn" data-dismiss="modal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                fill="#4F60E8" />
+            </svg>
+          </button>
+          <div class="font-32 mt-3 mb-4">
+            Edit about section
+          </div>
+          <div class="border-16 mt-2 mb-4">
+            Workhint policy, disallows sharing email addresses, contact numbers, or any other URLs. We</br>
+            remove text when our system detects words or numbers that might include contact information.
+          </div>
+          <div class="custom-icon-btn d-flex justify-content-center mt-2">
+            <span class="pl-4 pr-4">Save</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="edit-skills">
+    <div class="modal-dialog d-flex justify-content-center">
+      <div class="modal-content w-100">
+        <div class="modal-body d-flex flex-column align-items-center w-100" style="padding: 1rem 4rem 2rem;">
+          <button type="button" class="custom-close-btn" data-dismiss="modal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                fill="#4F60E8" />
+            </svg>
+          </button>
+          <div class="font-32 mt-3 mb-4">
+            Edit skills
+          </div>
+          <div class="border-16 mt-2 mb-4 w-100">
+            <div class="d-flex">
+              <div class="custom-labe1 d-flex align-items-center mr-4">
+                <span class="mr-2">PHP</span>
+                <span class="font-16">&times;</span>
+              </div>
+              <div class="custom-labe1 d-flex align-items-center mr-4">
+                <span class="mr-2">mysql</span>
+                <span class="font-16">&times;</span>
+              </div>
+              <div class="custom-labe1 d-flex align-items-center mr-4">
+                <span class="mr-2">Laravel</span>
+                <span class="font-16">&times;</span>
+              </div>
+              <div class="custom-labe1 d-flex align-items-center mr-4">
+                <span class="mr-2">Ubuntu</span>
+                <span class="font-16">&times;</span>
+              </div>
+              <div class="custom-add-btn d-flex justify-content-center">
+                <span class="font-weight-normal mr-2">Add</span>
+                <span style="font-size: 20px;">+</span>
+              </div>
+            </div>
+          </div>
+          <div class="custom-icon-btn d-flex justify-content-center mt-2">
+            <span class="pl-4 pr-4">Save</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="edit-experience">
+    <div class="modal-dialog d-flex justify-content-center">
+      <div class="modal-content w-100">
+        <div class="modal-body d-flex flex-column align-items-center w-100" style="padding: 1rem 4rem 2rem;">
+          <button type="button" class="custom-close-btn" data-dismiss="modal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                fill="#4F60E8" />
+            </svg>
+          </button>
+          <div class="font-32 mt-3 mb-4">
+            Edit experience
+          </div>
+          <div class="d-flex flex-wrap">
+            <div class="d-flex flex-column mr-4 pr-2 mb-4">
+              <span class="font-10 ml-3">Position</span>
+              <input type="text" placeholder="Manager" class="custom-input" value="">
+            </div>
+            <div class="d-flex flex-column mr-4 pr-2 mb-4">
+              <span class="font-10 ml-3">Country</span>
+              <input type="text" placeholder="Google" class="custom-input" value="">
+            </div>
+            <div class="d-flex flex-column mb-4 pr-2">
+              <span class="font-10 ml-3">Start Work</span>
+              <div class="btn-group custom-dropdown-bg-placeholder mr-4">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">2020<span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="#">2020</a></li>
+                  <li class="dropdown-item"><a href="#">2019</a></li>
+                  <li class="dropdown-item"><a href="#">2018</a></li>
+                  <li class="dropdown-item"><a href="#">2017</a></li>
+                  <li class="dropdown-item"><a href="#">2016</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex flex-column mb-4 ">
+              <span class="font-10 ml-3">Finish Work</span>
+              <div class="btn-group custom-dropdown-bg-placeholder mr-4">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">Now<span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item"><a href="#">2020</a></li>
+                  <li class="dropdown-item"><a href="#">2019</a></li>
+                  <li class="dropdown-item"><a href="#">2018</a></li>
+                  <li class="dropdown-item"><a href="#">2017</a></li>
+                  <li class="dropdown-item"><a href="#">2016</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <span class="font-10 ml-3">City</span>
+              <input type="text" placeholder="San Francisco" class="custom-input" value="">
+            </div>
+          </div>
+          <div class="border-16 mt-2 mb-4">
+            Workhint policy, disallows sharing email addresses, contact numbers, or any other URLs. We</br>
+            remove text when our system detects words or numbers that might include contact information.
+          </div>
+          <div class="custom-icon-btn d-flex justify-content-center mt-2">
+            <span class="pl-4 pr-4">Save</span>
           </div>
         </div>
       </div>
