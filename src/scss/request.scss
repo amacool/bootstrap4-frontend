@@ -21,7 +21,78 @@
 
 .receive-message-wrapper {
   box-sizing: border-box;
-  background-color: #E5E9F1;
+  background-color: #e5e9f1;
   border-radius: 24px 24px 24px 0px;
 }
 
+.message-end-line {
+  width: 70%;
+  height: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 14px;
+}
+
+.request-complete {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #04b154;
+}
+
+.custom-textarea {
+  background: #f8f8f8;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 90%;
+  padding: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  &::placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline-offset: unset;
+    outline: unset;
+  }
+}
+
+.custom-modal-open {
+  .modal-backdrop.show {
+    width: calc(100vw - 337px);
+    height: calc(100vh - 106px);
+    bottom: 0;
+    right: 0;
+    top: unset;
+    left: unset;
+    opacity: 0.5;
+    backdrop-filter: blur(10px);
+  }
+}
+
+.custom-modal-open {
+  .modal-dialog {
+    min-width: unset;
+  }
+  .modal.show {
+    width: calc(100vw - 337px);
+    height: calc(100vh - 106px);
+    bottom: 0;
+    right: 0;
+    top: unset;
+    left: unset;
+  }
+}
