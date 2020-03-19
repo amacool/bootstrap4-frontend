@@ -45,6 +45,30 @@ $(".info-btn").click(function () {
 });
 
 $(".request-header-info").click(function () {
-  $(".request-header-info").removeClass("d-flex");
+  if ($(".request-header-info").hasClass("d-flex")) {
+    $(".request-header-info").removeClass("d-flex");
+  }
   $(".request-header-info").addClass("d-none");
+});
+
+$(".contact-issue-invoice").click(function () {
+  $(".request-issue-invoice").addClass("d-flex");
+  if ($(".request-issue-invoice").hasClass("d-none")) {
+    $(".request-issue-invoice").removeClass("d-none");
+  }
+  $(".request-send-completion").addClass("d-none");
+  if ($(".request-send-completion").hasClass("d-flex")) {
+    $(".request-send-completion").removeClass("d-flex");
+  }
+});
+
+$(".contact-send-completion").click(function () {
+  if ($(".request-issue-invoice").hasClass("d-flex")) {
+    $(".request-issue-invoice").removeClass("d-flex");
+  }
+  $(".request-issue-invoice").addClass("d-none");
+  if ($(".request-send-completion").hasClass("d-flex")) {
+    $(".request-send-completion").removeClass("d-none");
+  }
+  $(".request-send-completion").addClass("d-flex");
 });
