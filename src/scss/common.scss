@@ -7,6 +7,15 @@ body {
   border-bottom: 1px solid rgba(208, 227, 242, 0.5);
 }
 
+.font-40 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 49px;
+  color: #333333;
+}
+
 .font-32 {
   font-family: Montserrat;
   font-style: normal;
@@ -200,6 +209,21 @@ footer {
       }
     }
   }
+}
+
+.custom-delete-btn {
+  width: fit-content;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background: #4f60e8;
+  border-radius: 16px;
+  padding: 2px 20px;
 }
 
 // custom text inputs

@@ -3,6 +3,11 @@
   background-color: #d8e7fd;
 }
 
+.request-header-info {
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
 .request-header-bottom {
   padding: 6px 24px;
   background-color: #b0d5ff;
@@ -84,9 +89,6 @@
 }
 
 .custom-modal-open {
-  .modal-dialog {
-    min-width: unset;
-  }
   .modal.show {
     width: calc(100vw - 337px);
     height: calc(100vh - 106px);
@@ -94,5 +96,126 @@
     right: 0;
     top: unset;
     left: unset;
+  }
+  .issue-invoice-modal-dialog {
+    min-width: unset;
+  }
+  .send-completion-modal-dialog {
+    min-width: unset;
+    max-width: 90%;
+  }
+}
+
+.timesheet-tracker-card {
+  cursor: pointer;
+  background: #3ee2ee;
+  border-radius: 8px;
+  height: 136px;
+  padding: 1.5rem;
+}
+
+.timesheet-video-card {
+  cursor: pointer;
+  background: #a5c8fd;
+  border-radius: 8px;
+  height: 136px;
+  padding: 1.5rem;
+}
+
+.tracker-table {
+  .dataTables_length {
+    display: none;
+  }
+
+  .dataTables_filter {
+    display: none;
+  }
+
+  .dataTables_paginate {
+    display: none;
+  }
+
+  .dataTables_info {
+    display: none;
+  }
+
+  .dataTables_wrapper {
+    width: 100%;
+    .page-item {
+      &:last-child .page-link {
+        font-size: 0;
+        background: transparent;
+
+        &:after {
+          content: "⟶";
+          font-size: 14px;
+        }
+      }
+
+      &:first-child .page-link {
+        font-size: 0;
+        background: transparent;
+
+        &:after {
+          content: "⟵";
+          font-size: 14px;
+        }
+      }
+
+      .page-link {
+        background-color: transparent;
+        font-size: 14px;
+        color: $body-color;
+        border: 0;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .disabled .page-link {
+      background: transparent;
+      color: $color-disabled;
+    }
+
+    .active .page-link {
+      border: 1px solid;
+      border-radius: 3px;
+      background: transparent;
+      color: $color-nav-icon-active;
+    }
+
+    & > .row {
+      margin-bottom: 1.5rem;
+
+      &:last-child {
+        justify-content: center;
+
+        & > div:first-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #ebf3ff;
+  }
+  .table thead th {
+    border-bottom: unset;
+    padding: 0.75rem;
+  }
+  tr {
+    height: 48px;
+    td {
+      padding: 0.75rem;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 22px;
+      color: #000000;
+    }
   }
 }
