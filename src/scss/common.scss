@@ -456,6 +456,263 @@ footer {
   right: -3px;
 }
 
+
+
+// Custom DatePicker
+.custom-daterange-picker {
+  border-radius: 40px !important;
+  border: none;
+  padding: 13px 0 13px 24px;
+  background-color: #ddebf6 !important;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #37373d;
+  &:focus {
+    outline: unset;
+  }
+  &::placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #37373d;
+    opacity: 0.6;
+  }
+}
+
+.daterangepicker {
+  .calendar-table th,
+  .calendar-table td {
+    padding: 10px 13px !important;
+    font-size: 16px !important;
+    font-family: Montserrat !important;
+  }
+
+  td.active,
+  td.active:hover {
+    background-color: #2196f3 !important;
+  }
+  .drp-calendar {
+    max-width: unset !important;
+  }
+}
+
+// custom select
+.custom-select-bright {
+  .custom-select {
+    position: relative;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #37373d;
+  }
+
+  .custom-select select {
+    display: none;
+  }
+
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 16px;
+    right: 18px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-color: #747c84 transparent transparent transparent;
+  }
+
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #747c84 transparent;
+    top: 10px;
+  }
+
+  .select-items div {
+    color: #747c84;
+    padding: 10px 16px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .select-selected {
+    background: #ddebf6;
+    color: #747c84;
+    padding: 10px 16px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 20px;
+  }
+
+  .select-items {
+    position: absolute;
+    background-color: #ddebf6;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+
+  .select-hide {
+    display: none;
+  }
+  .select-items div:hover,
+  .same-as-selected {
+    color: #37373d;
+    background-color: #d0e3f2;
+    border-radius: 8px;
+  }
+}
+
+.custom-select-mark {
+  .select-selected {
+    background: transparent !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .select-items {
+    margin-top: 2px !important;
+  }
+  .select-selected:after {
+    right: 10px !important;
+  }
+}
+
+.custom-select-dark {
+  .custom-select {
+    position: relative;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #37373d;
+  }
+
+  .custom-select select {
+    display: none;
+  }
+
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 16px;
+    right: 18px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-color: #747c84 transparent transparent transparent;
+  }
+
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #747c84 transparent;
+    top: 12px;
+  }
+
+  .select-items div {
+    color: #747c84;
+    padding: 12px 16px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .select-selected {
+    background: #d0e3f2;
+    color: #747c84;
+    padding: 13px 16px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 20px;
+  }
+
+  .select-items {
+    position: absolute;
+    background-color: #d0e3f2;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+
+  .select-hide {
+    display: none;
+  }
+  .select-items div:hover,
+  .same-as-selected {
+    color: #37373d;
+    background-color: #c2dbef;
+    border-radius: 8px;
+  }
+}
+
+.list-group-item-handle {
+  cursor: move;
+  cursor: -webkit-grabbing;
+}
+
+//custom phone input
+#phone {
+  background: #d0e3f3;
+  border-radius: 20px;
+  padding: 8px 12px 8px 65px;
+  border: none;
+  &:focus {
+    outline: unset !important;
+  }
+}
+
+.iti.iti--allow-dropdown {
+  width: 100%;
+  margin-bottom: 12px;
+
+  .iti__flag-container {
+    left: 12px;
+    &:focus {
+      outline: unset !important;
+      border: none !important;
+    }
+    .iti__selected-flag:focus {
+      outline: unset !important;
+      border: none !important;
+    }
+  }
+}
+
+.iti__country-list {
+  border-radius: 10px !important;
+  background: #d0e3f3 !important;
+  margin-top: 6px !important;
+  border: none;
+  padding: 10px;
+}
+
+.iti__country-name, .iti__dial-code {
+  display: none;
+}
+
+// customize scroll bar 
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #a4bed4; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #829cb3; 
+}
+
 @include media-breakpoint-down(sm) {
   .font-32 {
     font-size: 20px;
