@@ -7,6 +7,14 @@ body {
   border-bottom: 1px solid rgba(208, 227, 242, 0.5);
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.my-request:hover {
+  text-decoration: none;
+}
+
 .font-40 {
   font-family: Montserrat;
   font-style: normal;
@@ -105,13 +113,22 @@ body {
   height: $navbar-height;
 
   .dropdown-menu {
-    top: -8px;
+    top: -16px;
     left: -222px;
     min-width: 261px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+    border: none;
 
     .dropdown-item {
-      height: 40px;
+      height: 60px;
       line-height: 34px;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+      cursor: pointer;
+      padding-left: 50px;
 
       &:hover {
         font-weight: bold;
@@ -133,6 +150,7 @@ body {
   }
 
   .dropdown-toggle {
+    cursor: pointer;
     &::after {
       display: none;
     }
@@ -170,47 +188,7 @@ footer {
   }
 }
 
-// Custom Dropdown
-.custom-dropdown-bg-placeholder {
-  a.dropdown-toggle {
-    background-color: $color-input-bg;
-    border-radius: 40px;
-    border: none;
-    color: $color-input-placeholder;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.4rem 1rem;
-    &:focus {
-      box-shadow: 2px 2px 4px rgba(75, 75, 83, 0.07);
-    }
-  }
-
-  ul.dropdown-menu {
-    border: none;
-    border-radius: 8px;
-    margin-top: 13px;
-    width: 100%;
-    background-color: $color-input-bg;
-
-    li {
-      a {
-        color: $color-input-placeholder;
-        width: 100%;
-        cursor: pointer;
-        display: block;
-        text-decoration: none;
-      }
-      &:hover {
-        background-color: $color-input-bg;
-        a {
-          color: $color-input-text;
-        }
-      }
-    }
-  }
-}
-
+//delete button for user deatil row.
 .custom-delete-btn {
   width: fit-content;
   font-family: Montserrat;
@@ -284,10 +262,6 @@ footer {
     color: $color-primary;
   }
 
-  svg {
-    margin-right: 10px;
-  }
-
   &:active {
     background-color: $color-primary;
 
@@ -301,7 +275,62 @@ footer {
   }
 }
 
+.custom-accept-btn {
+  background: #4F60E8;
+  padding: 10px 30px;
+  border-radius: 30px;
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+
+  &:focus {
+    outline: unset;
+  }
+
+  &:active {
+    background-color: white;
+    color: #4F60E8;
+  }
+}
+
+.custom-reject-btn {
+  background: #D8E7FD;
+  padding: 10px 30px;
+  border-radius: 30px;
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: black;
+
+  &:focus {
+    outline: unset;
+  }
+
+  // &:active {
+  //   background-color: white;
+  //   color: #4F60E8;
+  // }
+}
+
 .custom-icon-btn {
+  background: transparent;
   padding: 12px 24px;
   border-radius: 30px;
   border: 1px solid $color-primary;
@@ -311,26 +340,20 @@ footer {
   width: fit-content;
   cursor: pointer;
 
-  span {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    color: $color-primary;
-  }
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-primary;
 
-  svg {
-    margin-right: 10px;
+  &:focus {
+    outline: unset;
   }
 
   &:active {
     background-color: $color-primary;
-
-    & > span {
-      color: white;
-    }
-
+    color: white;
     & > svg > path {
       fill: white;
     }
@@ -455,8 +478,6 @@ footer {
   top: -3px;
   right: -3px;
 }
-
-
 
 // Custom DatePicker
 .custom-daterange-picker {
@@ -661,7 +682,7 @@ footer {
 
 //custom phone input
 #phone {
-  background: #d0e3f3;
+  background: #ddebf6;
   border-radius: 20px;
   padding: 8px 12px 8px 65px;
   border: none;
@@ -689,28 +710,29 @@ footer {
 
 .iti__country-list {
   border-radius: 10px !important;
-  background: #d0e3f3 !important;
+  background: #ddebf6 !important;
   margin-top: 6px !important;
   border: none;
   padding: 10px;
 }
 
-.iti__country-name, .iti__dial-code {
+.iti__country-name,
+.iti__dial-code {
   display: none;
 }
 
-// customize scroll bar 
+// customize scroll bar
 ::-webkit-scrollbar {
   width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: #a4bed4; 
+  background: #a4bed4;
 }
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #829cb3; 
+  background: #829cb3;
 }
 
 @include media-breakpoint-down(sm) {
