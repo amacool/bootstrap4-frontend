@@ -14,7 +14,6 @@
   </style>
   <script src="./bundle.js"></script>
   <link href="./css/dataTable.min.css" rel="stylesheet" type="text/css">
-  <!-- <link href="./css/gijgo.min.css" rel="stylesheet" type="text/css" /> -->
   <link href="./css/daterangepicker.css" rel="stylesheet" type="text/css" />
   <link href="./css/intlTelInput.min.css" rel="stylesheet" type="text/css" />
   <script src="./bundle.js"></script>
@@ -96,16 +95,15 @@
     </nav>
     <div
       class="main-content container-fluid flex-grow-1 d-flex flex-column justify-content-between p-0 mb-0 overflow-auto">
-      <div class="d-flex flex-column align-items-center">
-        <div class="col-2"></div>
-        <div class="col-8">
+      <div class="d-flex align-items-start">
+        <div class="col-0 col-md-1 col-sm-0 p-0"></div>
+        <div class="col-12 col-md-8 col-sm-12 p-0">
           <div class="d-flex justify-content-start mt-5 mb-5 w-100">
-            <span class="font-32">settings</span>
+            <span class="font-32 pl-3">settings</span>
           </div>
           <div class="d-flex justify-content-center row m-0 w-100">
-            <div
-              class="custom-card-back col-12 col-sm-12 col-md-6 padding-32 mb-2 d-flex flex-column align-items-center">
-              <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 mb-2 d-flex flex-column align-items-center">
+              <div class="custom-card-back padding-32 d-flex flex-column align-items-center w-100">
                 <h6 class="font-weight-bold text-center w-100 mb-4">Change password</h6>
                 <input type="text" class="custom-input w-100 mb-3" placeholder="Old password">
                 <input type="email" class="custom-input w-100 mb-3" placeholder="New password">
@@ -114,8 +112,8 @@
               </div>
             </div>
             <div
-              class="custom-card-back col-12 col-sm-12 col-md-6 h-fit-content padding-32 pr-0 pr-md-4 pr-sm-0 mt-md-0 mt-sm-4 d-flex align-items-center flex-column">
-              <div class="w-100">
+              class="col-12 col-sm-12 col-md-6 h-fit-content mt-md-0 mt-sm-4 d-flex align-items-center flex-column">
+              <div class="custom-card-back padding-32 d-flex flex-column align-items-center w-100">
                 <h5 class="font-weight-bold text-center w-100 mb-4">Update mmail</h5>
                 <input type="text" class="custom-input w-100 mb-3" placeholder="enter new email">
                 <button class="custom-icon-btn mt-3">Submit</button>
@@ -123,7 +121,7 @@
             </div>
           </div>
         </div>
-        <div class="col-2"></div>
+        <div class="col-12 col-md-12 col-sm-3 p-0"></div>
       </div>
       <footer class="d-flex align-items-center mt-5">
         <div
@@ -144,227 +142,9 @@
       </footer>
     </div>
   </div>
-  <div class="modal" id="edit-personal-info">
-    <div class="modal-dialog d-flex justify-content-center" style="max-width: unset;">
-      <div class="modal-content" style="width: fit-content;">
-        <div class="modal-body d-flex flex-column align-items-center"
-          style="width: fit-content; padding: 1rem 4rem 2rem;">
-          <button type="button" class="custom-close-btn" data-dismiss="modal">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-                fill="#4F60E8" />
-            </svg>
-          </button>
-          <div class="font-32 mt-3 mb-4">
-            Edit personal information
-          </div>
-          <div class="mt-2 mb-4 d-flex justify-content-between w-100">
-            <div class="custom-select-bright" style="width: 30%;">
-              <div class="custom-select mb-4 p-0" style="width:200px; background: transparent; border: none;">
-                <select>
-                  <option value="0">Select user type</option>
-                  <option value="1">Clients</option>
-                  <option value="2">Freelancers</option>
-                </select>
-              </div>
-            </div>
-            <div class="mr-4" style="width: 25%;">
-              <input class="w-100" id="phone" name="phone" type="tel">
-            </div>
-            <div class="custom-select-bright" style="width: 30%;">
-              <div class="custom-select mb-4 p-0" style="width:200px; background: transparent; border: none;">
-                <select>
-                  <option value="0">Select user type</option>
-                  <option value="1">Clients</option>
-                  <option value="2">Freelancers</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex mb-4 pb-2">
-            <div class="border-16 d-flex flex-column mr-0 mr-sm-0 mr-md-2">
-              <div class="font-14 font-weight-bold mb-3">Languages</div>
-              <div class="d-flex">
-                <div class="custom-labe1 d-flex align-items-center mr-4">
-                  <span class="mr-2">English</span>
-                  <span class="font-16">&times;</span>
-                </div>
-                <div class="custom-labe1 d-flex align-items-center mr-4">
-                  <span class="mr-2">English</span>
-                  <span class="font-16">&times;</span>
-                </div>
-                <div class="custom-add-btn d-flex justify-content-center">
-                  <span class="font-weight-normal mr-2">Add</span>
-                  <span style="font-size: 20px;">+</span>
-                </div>
-              </div>
-            </div>
-            <div class="border-16 d-flex flex-column ml-0 ml-sm-0 ml-md-2">
-              <div class="font-14 font-weight-bold mb-3">Expertise</div>
-              <div class="d-flex">
-                <div class="custom-labe1 d-flex align-items-center mr-4">
-                  <span class="mr-2">Finance</span>
-                  <span class="font-16">&times;</span>
-                </div>
-                <div class="custom-labe1 d-flex align-items-center mr-4">
-                  <span class="mr-2">Accounting</span>
-                  <span class="font-16">&times;</span>
-                </div>
-                <div class="custom-add-btn d-flex justify-content-center">
-                  <span class="font-weight-normal mr-2">Add</span>
-                  <span style="font-size: 20px;">+</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <button class="custom-icon-btn d-flex pl-5 pr-5 justify-content-center">Save</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal" id="edit-about-section">
-    <div class="modal-dialog d-flex justify-content-center" style="max-width: unset;">
-      <div class="modal-content" style="width: fit-content;">
-        <div class="modal-body d-flex flex-column align-items-center"
-          style="width: fit-content; padding: 1rem 4rem 2rem;">
-          <button type="button" class="custom-close-btn" data-dismiss="modal">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-                fill="#4F60E8" />
-            </svg>
-          </button>
-          <div class="font-32 mt-3 mb-4">
-            Edit about section
-          </div>
-          <div class="border-16 mt-2 mb-4">
-            Workhint policy, disallows sharing email addresses, contact numbers, or any other URLs. We</br>
-            remove text when our system detects words or numbers that might include contact information.
-          </div>
-          <button class="custom-icon-btn d-flex justify-content-center mt-2 pl-5 pr-5">Save</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal" id="edit-skills">
-    <div class="modal-dialog d-flex justify-content-center">
-      <div class="modal-content w-100">
-        <div class="modal-body d-flex flex-column align-items-center w-100" style="padding: 1rem 4rem 2rem;">
-          <button type="button" class="custom-close-btn" data-dismiss="modal">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-                fill="#4F60E8" />
-            </svg>
-          </button>
-          <div class="font-32 mt-3 mb-4">
-            Edit skills
-          </div>
-          <div class="border-16 mt-2 mb-4 w-100">
-            <div class="d-flex">
-              <div class="custom-labe1 d-flex align-items-center mr-4">
-                <span class="mr-2">PHP</span>
-                <span class="font-16">&times;</span>
-              </div>
-              <div class="custom-labe1 d-flex align-items-center mr-4">
-                <span class="mr-2">mysql</span>
-                <span class="font-16">&times;</span>
-              </div>
-              <div class="custom-labe1 d-flex align-items-center mr-4">
-                <span class="mr-2">Laravel</span>
-                <span class="font-16">&times;</span>
-              </div>
-              <div class="custom-labe1 d-flex align-items-center mr-4">
-                <span class="mr-2">Ubuntu</span>
-                <span class="font-16">&times;</span>
-              </div>
-              <div class="custom-add-btn d-flex justify-content-center">
-                <span class="font-weight-normal mr-2">Add</span>
-                <span style="font-size: 20px;">+</span>
-              </div>
-            </div>
-          </div>
-          <button class="custom-icon-btn d-flex justify-content-center pl-5 pr-5 mt-2">Save</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal" id="edit-experience">
-    <div class="modal-dialog d-flex justify-content-center">
-      <div class="modal-content w-100">
-        <div class="modal-body d-flex flex-column align-items-center w-100" style="padding: 1rem 4rem 2rem;">
-          <button type="button" class="custom-close-btn" data-dismiss="modal">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-                fill="#4F60E8" />
-            </svg>
-          </button>
-          <div class="font-32 mt-3 mb-4">
-            Edit experience
-          </div>
-          <div class="d-flex flex-wrap">
-            <div class="d-flex flex-column mr-4 pr-2 mb-2">
-              <span class="font-10 ml-3">Position</span>
-              <input type="text" placeholder="Manager" class="custom-input" value="">
-            </div>
-            <div class="d-flex flex-column mr-4 pr-2 mb-2">
-              <span class="font-10 ml-3">Country</span>
-              <input type="text" placeholder="Google" class="custom-input" value="">
-            </div>
-            <div class="d-flex flex-column mb-4 pr-2 mr-3">
-              <span class="font-10 ml-3">Start Work</span>
-              <div class="custom-select-bright">
-                <div class="custom-select mb-1 p-0" style="width:100px; background: transparent; border: none;">
-                  <select>
-                    <option value="0">2020</option>
-                    <option value="1">2019</option>
-                    <option value="2">2018</option>
-                    <option value="3">2017</option>
-                    <option value="4">2016</option>
-                    <option value="5">2015</option>
-                    <option value="6">2014</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="d-flex flex-column">
-              <span class="font-10 ml-3">Finish Work</span>
-              <div class="custom-select-bright">
-                <div class="custom-select mb-1 p-0" style="width:100px; background: transparent; border: none;">
-                  <select>
-                    <option value="0">Now</option>
-                    <option value="1">2019</option>
-                    <option value="2">2018</option>
-                    <option value="3">2017</option>
-                    <option value="4">2016</option>
-                    <option value="5">2015</option>
-                    <option value="6">2014</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="d-flex flex-column">
-              <span class="font-10 ml-3">City</span>
-              <input type="text" placeholder="San Francisco" class="custom-input" value="">
-            </div>
-          </div>
-          <div class="border-16 mt-4 mb-4">
-            Workhint policy, disallows sharing email addresses, contact numbers, or any other URLs. We</br>
-            remove text when our system detects words or numbers that might include contact information.
-          </div>
-          <button class="custom-icon-btn d-flex justify-content-center mt-2 pl-5 pr-5">Save</button>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 
 <script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
-<!-- <script src="./js/gijgo.min.js" type="text/javascript"></script> -->
 <script src="./js/intlTelInput.min.js"></script>
 <script src="./js/intlTelInput.utils.js"></script>
 <script src="./js/moment.min.js"></script>
