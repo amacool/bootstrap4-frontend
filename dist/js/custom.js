@@ -153,3 +153,21 @@ if (input) {
     utilsScript: "./js/utils.js",
   });
 }
+
+// notification
+$(".btn-notification").click(function(e) {
+  e.stopPropagation();
+  $obj = $(".custom-notification");
+  console.log($obj);
+  if ($obj.css('display') === 'none') {
+    $obj.css({ display: 'block' });
+  } else {
+    $obj.css({ display: 'none' });
+  }
+});
+
+if ($(".btn-notification").length > 0) {
+  $(window).click(function() {
+    $obj.css({ display: 'none' });
+  });
+}

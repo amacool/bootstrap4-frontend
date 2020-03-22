@@ -745,6 +745,41 @@ footer {
   }
 }
 
+// custom notification
+.custom-notification {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  padding-bottom: 23px;
+  position: absolute;
+  width: 559px;
+  margin-left: -490px;
+  margin-top: 15px;
+  border-radius: 12px 12px 8px 8px;
+  z-index: 1;
+  display: none;
+  
+  ul {
+    padding: 0;
+    li {
+      padding: 21px 32px 18px;
+      font-size: 16px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      list-style: none;
+      cursor: pointer;
+    }
+  }
+  &::before {
+    content: "";
+    border-bottom: 19px solid #fff;
+    border-right: 14px solid transparent;
+    border-left: 14px solid transparent;
+    position: absolute;
+    top: -19px;
+    right: 38px;
+    z-index: 10;
+  }
+}
+
 @include media-breakpoint-down(sm) {
   .font-32 {
     font-size: 20px;
