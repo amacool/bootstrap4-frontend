@@ -735,6 +735,16 @@ footer {
   background: #829cb3;
 }
 
+// custom setting card background
+.custom-card-back {
+  background-color: $color-bg-card;
+  border-radius: 0.5rem;
+  min-width: 300px;
+  .custom-input {
+    background: #D0E3F2;
+  }
+}
+
 @include media-breakpoint-down(sm) {
   .font-32 {
     font-size: 20px;
