@@ -278,67 +278,123 @@
             </div>
           </div>
           <div class="request-main h-100 overflow-auto d-flex align-items-start">
-            <div class="p-4 mt-2 mb-2">
-              <div class="d-flex justify-content-end align-items-end mb-4 pb-2">
-                <div class="row m-0 position-relative">
-                  <div class="col-3"></div>
-                  <div class="col-9 p-4 send-message-wrapper">
-                    <div class="font-16">
-                      Hello,</br></br>
-                      This is the time that suits me well:</br></br>
-                      Mar 09, 01:00 am (GMT+2)</br></br>
-                      If it works for you and you want the mentorship session to be via a video call, please be online
-                      at
-                      that
-                      time. If you wish the call to be offline, please let me know where is the preferred meeting
-                      location.
-                      </br></br>
-                      Thank you
+            <div class="d-flex flex-column p-4 mt-2 mb-2">
+              <div class="">
+                <div class="assigned-task-select" style="width: 70%;">
+                  <div class="d-fex mb-3">
+                    <span class="mr-3 font-14 font-weight-bold">Agreed tasks</span>
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.59 7.40991L6 2.82991L1.41 7.40991L0 5.99991L6 -8.7738e-05L12 5.99991L10.59 7.40991Z" fill="black"/>
+                    </svg>
+                  </div>
+                  <div class="pl-3 d-flex align-items-center">
+                    <input type="checkbox" name="selectall" id="selectall" class="all" value="1">
+                    <div for="selectall" class="mt-1 ml-2">Select all</div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-3 p-3 assigned-task-item">
+                    <div class="d-flex align-items-center">
+                      <input type="checkbox" name="check[]" id="check1" class="1" value="chcek1">
+                      <div class="ml-3">
+                        <label class="font-12 font-weight-bold" for="check1">Title 1. Lorem Ipsum Lorem Ipsum</label>
+                        <div class="font-12">Name of task lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit</div>
+                      </div>
                     </div>
-                    <div class="position-absolute font-14"
-                      style="right: 1.5rem; top: 1.5rem; color: rgba(0, 0, 0, 0.4);">
-                      09:17 AM
+                    <button class="custom-icon-btn d-flex justify-content-center h-fit-content pr-4 pl-4 font-16 pt-2 pb-2">Mark as done</button>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-3 p-3 assigned-task-item">
+                    <div class="d-flex align-items-center">
+                      <input type="checkbox" name="check[]" id="check2" class="2" value="chcek2">
+                      <div class="ml-3">
+                        <label class="font-12 font-weight-bold" for="check2">Title 1. Lorem Ipsum Lorem Ipsum</label>
+                        <div class="font-12">Name of task lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit</div>
+                      </div>
                     </div>
+                    <button class="custom-icon-btn d-flex justify-content-center h-fit-content pr-4 pl-4 font-16 pt-2 pb-2">Mark as done</button>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-3 p-3 assigned-task-item">
+                    <div class="d-flex align-items-center">
+                      <input type="checkbox" name="check[]" id="check3" class="3" value="chcek3">
+                      <div class="ml-3">
+                        <label class="font-12 font-weight-bold" for="check3">Title 1. Lorem Ipsum Lorem Ipsum</label>
+                        <div class="font-12">Name of task lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit</div>
+                      </div>
+                    </div>
+                    <button class="custom-icon-btn d-flex justify-content-center h-fit-content pr-4 pl-4 font-16 pt-2 pb-2">Mark as done</button>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-3 p-3 assigned-task-item">
+                    <div class="d-flex align-items-center">
+                      <input type="checkbox" name="check[]" id="check4" class="1" value="chcek4">
+                      <div class="ml-3">
+                        <label class="font-12 font-weight-bold" for="check4">Title 1. Lorem Ipsum Lorem Ipsum</label>
+                        <div class="font-12">Name of task lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit</div>
+                      </div>
+                    </div>
+                    <button class="custom-icon-btn d-flex justify-content-center h-fit-content pr-4 pl-4 font-16 pt-2 pb-2">Mark as done</button>
                   </div>
                 </div>
-                <div class="ml-4">
-                  <img src="./img/receive-user.svg" alt="">
-                </div>
               </div>
-              <div class="d-flex justify-content-start align-items-end mb-4 pb-2">
-                <div class="mr-4">
-                  <img src="./img/send-user.svg">
-                </div>
-                <div class="row m-0 position-relative w-100">
-                  <div class="col-9 p-4 receive-message-wrapper">
-                    <div class="font-16">Hello</div>
-                    <div class="position-absolute font-14"
-                      style="right: 1.5rem; top: 1.5rem; color: rgba(0, 0, 0, 0.4);">
-                      09:17 AM
+              <div class="p-4 mt-2 mb-2">
+                <div class="d-flex justify-content-end align-items-end mb-4 pb-2">
+                  <div class="row m-0 position-relative">
+                    <div class="col-3"></div>
+                    <div class="col-9 p-4 send-message-wrapper">
+                      <div class="font-16">
+                        Hello,</br></br>
+                        This is the time that suits me well:</br></br>
+                        Mar 09, 01:00 am (GMT+2)</br></br>
+                        If it works for you and you want the mentorship session to be via a video call, please be online
+                        at
+                        that
+                        time. If you wish the call to be offline, please let me know where is the preferred meeting
+                        location.
+                        </br></br>
+                        Thank you
+                      </div>
+                      <div class="position-absolute font-14"
+                        style="right: 1.5rem; top: 1.5rem; color: rgba(0, 0, 0, 0.4);">
+                        09:17 AM
+                      </div>
                     </div>
                   </div>
-                  <div class="col-3"></div>
+                  <div class="ml-4">
+                    <img src="./img/receive-user.svg" alt="">
+                  </div>
                 </div>
-              </div>
-              <div class="d-flex justify-content-center">
-                <div class="message-end-line"></div>
-              </div>
-              <div class="d-flex justify-content-center">
-                <div>
-                  <span class="font-14 font-weight-bold m-2">Call</span>
-                  <span class="font-14 font-weight-normal">10 min</span>
+                <div class="d-flex justify-content-start align-items-end mb-4 pb-2">
+                  <div class="mr-4">
+                    <img src="./img/send-user.svg">
+                  </div>
+                  <div class="row m-0 position-relative w-100">
+                    <div class="col-9 p-4 receive-message-wrapper">
+                      <div class="font-16">Hello</div>
+                      <div class="position-absolute font-14"
+                        style="right: 1.5rem; top: 1.5rem; color: rgba(0, 0, 0, 0.4);">
+                        09:17 AM
+                      </div>
+                    </div>
+                    <div class="col-3"></div>
+                  </div>
                 </div>
-              </div>
-              <div class="d-flex justify-content-center align-items-center mt-3">
-                <div>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M16.59 7.58L10 14.17L6.41 10.59L5 12L10 17L18 9L16.59 7.58ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
-                      fill="#04B154" />
-                  </svg>
+                <div class="d-flex justify-content-center">
+                  <div class="message-end-line"></div>
                 </div>
-                <div class="request-complete ml-3 mt-1">
-                  Request has been completed on 04/03/2020
+                <div class="d-flex justify-content-center">
+                  <div>
+                    <span class="font-14 font-weight-bold m-2">Call</span>
+                    <span class="font-14 font-weight-normal">10 min</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                  <div>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.59 7.58L10 14.17L6.41 10.59L5 12L10 17L18 9L16.59 7.58ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+                        fill="#04B154" />
+                    </svg>
+                  </div>
+                  <div class="request-complete ml-3 mt-1">
+                    Request has been completed on 04/03/2020
+                  </div>
                 </div>
               </div>
             </div>
@@ -766,6 +822,7 @@
         </div>
       </div>
     </div>
+    <!-- <div class="position-absolute w-100 h-100 video-overlay"></div> -->
   </div>
   <script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
   <script src="./js/jquery.dataTables.min.js"></script>
@@ -773,6 +830,12 @@
   <script src="./js/moment.min.js"></script>
   <script src="./js/daterangepicker.min.js"></script>
   <script src="./js/custom.js"></script>
+  <script src="./js/checkboxall.min.js"></script>
+  </script>
+  <script>
+    $('.assigned-task-select').checkboxall();
+  </script>
+
 </body>
 
 </html>
