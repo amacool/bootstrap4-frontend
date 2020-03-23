@@ -770,6 +770,11 @@ footer {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       list-style: none;
       cursor: pointer;
+      &:hover {
+        font-weight: bold;
+        text-decoration: none;
+        background-color: #f8f9fa;
+      }
     }
   }
   &::before {

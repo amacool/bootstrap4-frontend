@@ -154,11 +154,10 @@ if (input) {
   });
 }
 
-// notification
+// custom notification dropdown
 $(".btn-notification").click(function(e) {
   e.stopPropagation();
   $obj = $(".custom-notification");
-  console.log($obj);
   if ($obj.css('display') === 'none') {
     $obj.css({ display: 'block' });
   } else {
@@ -168,6 +167,23 @@ $(".btn-notification").click(function(e) {
 
 if ($(".btn-notification").length > 0) {
   $(window).click(function() {
+    $(".custom-notification").css({ display: 'none' });
+  });
+}
+
+// custom navigation dropdown
+$(".btn-navigation").click(function(e) {
+  e.stopPropagation();
+  $obj = $(".custom-navigation");
+  if ($obj.css('display') === 'none') {
+    $obj.css({ display: 'block' });
+  } else {
     $obj.css({ display: 'none' });
+  }
+});
+
+if ($(".btn-navigation").length > 0) {
+  $(window).click(function() {
+    $(".custom-navigation").css({ display: 'none' });
   });
 }
